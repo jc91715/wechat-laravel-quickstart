@@ -39,7 +39,6 @@ class WechatController extends Controller
         ));
 
         $openId = $array['openid'];
-        $array['wechat_sex'] = $array['sex'];
 
         $user = User::where('openid',$openId)->first();
         if($user){
